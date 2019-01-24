@@ -1,11 +1,14 @@
 package org.entgra.iot.weatherdata;
 
 public final class Constants {
-    public static final String DCR_EP = "http://dev.cloud.entgra.io:8280/api-application-registration/register";
-    public static final String TOKEN_EP = "http://dev.cloud.entgra.io:8280/token";
-    public static final String DEVICE_REG_EP = "https://dev.cloud.entgra.io:9443/api/device-mgt/v1.0/device/agent/enroll";
-    public static final String DEVICE_DATA_EP = "https://dev.cloud.entgra.io:9443/api/device-mgt/v1.0/devices/";
-    public static final String DEVICE_EVENTS_EP = "https://dev.cloud.entgra.io:9443/api/device-mgt/v1.0/device/agent/events/publish/";
+    public static final String DCR_EP = "http://localhost:8280/api-application-registration/register";
+    public static final String TOKEN_EP = "http://localhost:8280/token";
+    public static final String DEVICE_REG_EP = "https://localhost:9443/api/device-mgt/v1.0/device/agent/enroll";
+    public static final String DEVICE_TYPE_REG_EP = "https://localhost:9443/api/device-mgt/v1.0/admin/device-types";
+    public static final String DEVICE_TYPE_EVENTS_EP = "https://localhost:9443/api/device-mgt/v1.0/events/";
+    public static final String DEVICE_DATA_EP = "https://localhost:9443/api/device-mgt/v1.0/devices/";
+    public static final String DEVICE_TYPE_DATA_EP = "https://localhost:9443/api/device-mgt/v1.0/device-types/config/";
+    public static final String DEVICE_EVENTS_EP = "https://localhost:9443/api/device-mgt/v1.0/device/agent/events/publish/";
     public static final String HTTPS_PROTOCOL = "https";
     public static final String ADMIN_USERNAME = "admin";
     public static final String ADMIN_PW = "admin";
@@ -18,6 +21,7 @@ public final class Constants {
     public static final String DEVICE_TYPE = "weatherstation";
 
     public static final String DEVICE_ID = "ID";
+    public static final String SENSOR_TYPE = "TYPE";
     public static final String DEVICE_PASSWORD = "PASSWORD";
     public static final String DEVICE_ACTION = "action";
     public static final String DEVICE_SWTYPE = "softwareType";

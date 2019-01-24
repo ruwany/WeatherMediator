@@ -13,6 +13,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.entgra.iot.weatherdata.cache.DCRCacheUtil;
 import org.entgra.iot.weatherdata.cache.DeviceCacheUtil;
+import org.entgra.iot.weatherdata.cache.DeviceTypeCacheUtil;
 import org.entgra.iot.weatherdata.cache.TokenCacheUtil;
 import org.entgra.iot.weatherdata.dto.AccessTokenInfo;
 import org.entgra.iot.weatherdata.dto.DCRInfo;
@@ -86,5 +87,23 @@ public class Util {
         LoadingCache<String, Boolean> deviceCache = DeviceCacheUtil.getLoadingCache();
         System.out.println("Cache Size:" + deviceCache.size());
         return deviceCache.get(deviceID);
+    }
+
+    public static void refreshDeviceCache(String deviceID) {
+        LoadingCache<String, Boolean> deviceCache = DeviceCacheUtil.getLoadingCache();
+        System.out.println("Cache Size:" + deviceCache.size());
+        deviceCache.refresh(deviceID);
+    }
+
+    public static Boolean getDeviceType(String deviceType) throws ExecutionException {
+        LoadingCache<String, Boolean> deviceCache = DeviceTypeCacheUtil.getLoadingCache();
+        System.out.println("Cache Size:" + deviceCache.size());
+        return deviceCache.get(deviceType);
+    }
+
+    public static void refreshDeviceTypeCache(String deviceType) {
+        LoadingCache<String, Boolean> deviceCache = DeviceTypeCacheUtil.getLoadingCache();
+        System.out.println("Cache Size:" + deviceCache.size());
+        deviceCache.refresh(deviceType);
     }
 }

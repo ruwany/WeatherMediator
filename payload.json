@@ -1,0 +1,21 @@
+{
+  	"TYPE": "jixn",
+	"ID": "jujujss",
+	"action": "updateraw",
+	"location": "dallas",
+	"warning": "sss",
+	"softwareType": "LeeCom",
+	"PASSWORD": "fyYdhkot1001k",
+	"version": "WR2.00",
+	"data": [{
+		"dateist": "2019-01-21 16:45:07",
+		"dailyrainMM": "  1.0",
+		"rain": [],
+		"baromMM": "759",
+		"humidity": "73.90",
+		"tempc": "31.10",
+		"winddir": "157",
+		"windspeedkmh": "  2.5"
+	}]
+}
+
